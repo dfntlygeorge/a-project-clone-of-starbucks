@@ -25,3 +25,16 @@ ddMenus.forEach((ddMenu) => {
     ddMenu.classList.toggle("active");
   });
 });
+function closePopup() {
+  document.querySelector(".popup").style.display = "none";
+  document.querySelector(".popup-overlay").style.display = "none";
+  document.body.classList.add("scrollable"); // Restore scrolling
+}
+
+// Function to scroll to the top of the page
+function scrollToTop() {
+  window.scrollTo(0, 0);
+}
+
+// Call scrollToTop function when the page is being unloaded (before reload)
+window.onbeforeunload = scrollToTop;
