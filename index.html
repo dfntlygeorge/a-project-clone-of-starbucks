@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Starbucks Coffee Company</title>
+    <link rel="shortcut icon" href="images/starbucks.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://kit.fontawesome.com/34c7355fdd.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar flex center">
+        <div class="flex">
+          <a href="index.html"
+            ><img
+              src="images/logo.png"
+              alt="image of starbucks logo"
+              class="logo"
+          /></a>
+          <ul class="nav-links-hori flex center">
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">REWARDS</a></li>
+            <li><a href="#">GIFT CARDS</a></li>
+          </ul>
+        </div>
+        <div class="nav-btns flex">
+          <button class="loc-btn transparent-btn no-border">
+            <span class="fa-solid fa-location-dot"></span
+            ><a href="#">Find a store</a>
+          </button>
+          <button class="sign-in-btn white-btn">Sign in</button>
+          <button class="join-now-btn black-btn">Join now</button>
+        </div>
+        <button class="ham-menu" onclick="toggleSidebar()">
+          <span class="fa-solid fa-bars"></span>
+        </button>
+      </nav>
+    </header>
+    <nav class="sidebar">
+      <div>
+        <div>
+          <ul class="nav-links-verti flex">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Rewards</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-btns">
+          <button class="sign-in-btn white-btn">Sign in</button>
+          <button class="join-now-btn black-btn">Join now</button>
+          <br /><br />
+          <button class="loc-btn transparent-btn no-border">
+            <span class="fa-solid fa-location-dot"></span
+            ><a href="#">Find a store</a>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="myOverlay"></div>
+      <section id="banner-section">
+        <div class="banner flex purple-bg">
+          <div class="text-container-wrapper flex center on-bottom">
+            <div class="text-container flex center">
+              <h1 class="large-white-h1">Starbucks® Summer Game</h1>
+              <p class="large-white-p">
+                Play for a chance to win a trip for two to Costa Rica and
+                millions of other prizes!
+              </p>
+              <button class="transparent-btn white-border purple-hover">
+                Play now
+              </button>
+            </div>
+          </div>
+          <div class="img-container on-top">
+            <img
+              src="images/img1.jpg"
+              alt="The text “Starbucks® Summer Game: Dream Days” on a magenta background surrounded by prize icons."
+              class="banner-img"
+            />
+          </div>
+        </div>
+        <div class="banner flex cyan-bg">
+          <div class="img-container on-top">
+            <img
+              src="images/img2.jpg"
+              alt="The text “Starbucks® Summer Game: Dream Days” on a magenta background surrounded by prize icons."
+              class="banner-img"
+            />
+          </div>
+          <div class="text-container-wrapper flex center on-bottom">
+            <div class="text-container flex center">
+              <h1>Starbucks® Summer Game</h1>
+              <p>
+                Play for a chance to win a trip for two to Costa Rica and
+                millions of other prizes!
+              </p>
+              <button class="transparent-btn black-border cyan-hover">
+                Play now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="banner flex blue-bg">
+          <div class="text-container-wrapper flex center on-bottom">
+            <div class="text-container flex center">
+              <h1 class="large-white-h1">Summertime crew</h1>
+              <p class="large-white-p">
+                Super chill flavors, all lined up and ready for fun.
+              </p>
+              <button class="transparent-btn white-border blue-hover">
+                Order now
+              </button>
+            </div>
+          </div>
+          <div class="img-container on-top">
+            <img
+              src="images/img3.jpg"
+              alt="A blue drink with red pearls, a cold coffee with creamy topping and cookie sprinkles, and a blended coffee drink with whipped cream."
+              class="banner-img"
+            />
+          </div>
+        </div>
+
+        <div class="banner flex yellow-bg">
+          <div class="img-container on-top">
+            <img
+              src="images/img4.jpg"
+              alt="One tumbler and two cold cups featuring Sofie Birkin's art on a colored background."
+              class="banner-img"
+            />
+          </div>
+          <div class="text-container-wrapper flex center on-bottom">
+            <div class="text-container flex center grey-text">
+              <h1>Our latest collection</h1>
+              <p>
+                Sofie Birkin (she/her/they) explores transhistorical narratives
+                of queerness through bold and dynamic individuals, scenes, and
+                symbols - focusing on themes of nostalgia and community, which
+                reflects her roots and identity as a queer artist.
+              </p>
+              <button class="transparent-btn grey-border yellow-hover">
+                Meet Sofie
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="banner flex green-bg">
+          <div class="text-container-wrapper flex center on-bottom">
+            <div class="text-container flex center grey-text">
+              <h1>Personal cups for good</h1>
+              <p>
+                Your choice is a positive and responsible one—because bringing
+                your clean reusable cup helps our planet.
+              </p>
+              <button class="transparent-btn grey-border green-hover">
+                Learn more
+              </button>
+            </div>
+          </div>
+          <div class="img-container on-top">
+            <img
+              src="images/img5.jpg"
+              alt="An illustration of three reusable cups—a pink hot cup, a green tumbler with a straw, and a light green travel mug—in the middle of a circle arrow."
+              class="banner-img"
+            />
+          </div>
+        </div>
+      </section>
+      <div class="advisory-wrapper flex center">
+        <div class="advisory">
+          <p>
+            NO PURCHASE NECESSARY. Participating stores only. Starbucks Partners
+            (employees) are not eligible to win Sweepstakes prizes. Ends
+            6/17/24. To play and for
+            <a href="#" class="noUn-hover">Official Rules</a>, visit
+            <a href="#" class="noUn-hover">starbuckssummergame.com</a>.
+          </p>
+        </div>
+      </div>
+      <footer>
+        <div class="nav-links-container">
+          <div class="nav-links">
+            <div>
+              <h2>About Us</h2>
+              <ul>
+                <li><a href="#">Our Company</a></li>
+                <li><a href="#">Our Coffee</a></li>
+                <li><a href="#">Stories and News</a></li>
+                <li><a href="#">Starbucks Archive</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Costumer Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div>
+              <h2>Careers</h2>
+              <ul>
+                <li><a href="#">Culture and Values</a></li>
+                <li><a href="#">Inclusion, Diversity, and Equity</a></li>
+                <li><a href="#">College Achievement Plan</a></li>
+                <li><a href="#">Alumni Community</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">U.S. Careers</a></li>
+                <li><a href="#">International Careers</a></li>
+              </ul>
+            </div>
+            <div>
+              <h2>Social Impact</h2>
+              <ul>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Planet</a></li>
+                <li>
+                  <a href="#">Environmental and Social Impact Reporting</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2>For Business Partners</h2>
+              <ul>
+                <li><a href="#">Landlord Support Center</a></li>
+                <li><a href="#">Suppliers</a></li>
+                <li><a href="#">Corporate Gift Card Sales</a></li>
+                <li><a href="#">Office and Foodservice Coffee</a></li>
+              </ul>
+            </div>
+            <div>
+              <h2>Order and Pick Up</h2>
+              <ul>
+                <li><a href="#">Order on the App</a></li>
+                <li><a href="#">Order on the Web</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Order and Pick Up Options</a></li>
+                <li><a href="#">Explore and Find Coffee for Home</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dd-menu-container flex">
+            <div id="dd-menu">
+              <div class="menus flex">
+                <h2>About Us</h2>
+                <svg
+                  fill="#000000"
+                  height="16px"
+                  width="16px"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 330 330"
+                  xml:space="preserve"
+                >
+                  <path
+                    id="XMLID_225_"
+                    d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+              c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+              s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+                  />
+                </svg>
+              </div>
+              <div class="list">
+                <ul>
+                  <li><a href="#">Our Company</a></li>
+                  <li><a href="#">Our Coffee</a></li>
+                  <li><a href="#">Stories and News</a></li>
+                  <li><a href="#">Starbucks Archive</a></li>
+                  <li><a href="#">Investor Relations</a></li>
+                  <li><a href="#">Costumer Service</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div id="dd-menu">
+              <div class="menus flex">
+                <h2>Careers</h2>
+                <svg
+                  fill="#000000"
+                  height="16px"
+                  width="16px"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 330 330"
+                  xml:space="preserve"
+                >
+                  <path
+                    id="XMLID_225_"
+                    d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+              c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+              s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+                  />
+                </svg>
+              </div>
+              <div class="list">
+                <ul>
+                  <li><a href="#">Culture and Values</a></li>
+                  <li><a href="#">Inclusion, Diversity, and Equity</a></li>
+                  <li><a href="#">College Achievement Plan</a></li>
+                  <li><a href="#">Alumni Community</a></li>
+                  <li><a href="#">Investor Relations</a></li>
+                  <li><a href="#">U.S. Careers</a></li>
+                  <li><a href="#">International Careers</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="dd-menu">
+              <div class="menus flex">
+                <h2>Social Impact</h2>
+                <svg
+                  fill="#000000"
+                  height="16px"
+                  width="16px"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 330 330"
+                  xml:space="preserve"
+                >
+                  <path
+                    id="XMLID_225_"
+                    d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+              c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+              s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+                  />
+                </svg>
+              </div>
+              <div class="list">
+                <ul>
+                  <li><a href="#">People</a></li>
+                  <li><a href="#">Planet</a></li>
+                  <li>
+                    <a href="#">Environmental and Social Impact Reporting</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="dd-menu">
+              <div class="menus flex">
+                <h2>For Business Partners</h2>
+                <svg
+                  fill="#000000"
+                  height="16px"
+                  width="16px"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 330 330"
+                  xml:space="preserve"
+                >
+                  <path
+                    id="XMLID_225_"
+                    d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+              c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+              s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+                  />
+                </svg>
+              </div>
+              <div class="list">
+                <ul>
+                  <li><a href="#">Landlord Support Center</a></li>
+                  <li><a href="#">Suppliers</a></li>
+                  <li><a href="#">Corporate Gift Card Sales</a></li>
+                  <li><a href="#">Office and Foodservice Coffee</a></li>
+                </ul>
+              </div>
+            </div>
+            <div id="dd-menu">
+              <div class="menus flex">
+                <h2>Order and Pick Up</h2>
+                <svg
+                  fill="#000000"
+                  height="16px"
+                  width="16px"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 330 330"
+                  xml:space="preserve"
+                >
+                  <path
+                    id="XMLID_225_"
+                    d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+              c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+              s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+                  />
+                </svg>
+              </div>
+              <div class="list">
+                <ul>
+                  <li><a href="#">Order on the App</a></li>
+                  <li><a href="#">Order on the Web</a></li>
+                  <li><a href="#">Delivery</a></li>
+                  <li><a href="#">Order and Pick Up Options</a></li>
+                  <li><a href="#">Explore and Find Coffee for Home</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="socmed-links">
+            <a href="#"><span class="fa-brands fa-spotify"></span></a>
+            <a href="#"><span class="fa-brands fa-facebook"></span></a>
+            <a href="#"><span class="fa-brands fa-pinterest"></span></a>
+            <a href="#"><span class="fa-brands fa-square-instagram"></span></a>
+            <a href="#"><span class="fa-brands fa-youtube"></span></a>
+            <a href="#"><span class="fa-brands fa-square-x-twitter"></span></a>
+          </div>
+          <div class="privacy-links">
+            <ul>
+              <li><a href="#">Privacy Notice</a></li>
+              <li><a href="#">Consumer Health Privacy Notice</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Do Not Sell My Personal Information</a></li>
+              <li><a href="#">CA Supply Chain Act </a></li>
+              <li><a href="#">Accessiblity</a></li>
+              <li><a href="#">Cookie Preferences</a></li>
+            </ul>
+          </div>
+          <div class="copyrights">
+            <p>&copy;2024 Starbucks Coffee Company. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </body>
+</html>
