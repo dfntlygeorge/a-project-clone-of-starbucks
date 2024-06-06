@@ -413,7 +413,7 @@ header {
 }
 
 #dd-menu.active .list {
-  max-height: 700px;
+  max-height: 500px;
 }
 
 #dd-menu svg {
@@ -496,4 +496,13 @@ header {
 
 .scrollable {
   overflow-y: auto;
+}
+
+.sb-link {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.sb-link:hover {
+  text-decoration: underline;
 }
